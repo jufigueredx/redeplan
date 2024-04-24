@@ -194,12 +194,54 @@ padding: 20px 0px;
   margin: 0% 9%;
 }
 
-.grid-template-areas {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
   grid-template-areas:
-  "main main dois dois"
-    "main main tres quatro"
-    ;
-    grid-template-rows: 300px 300px; 
+    "g1 g2 g2"
+    "g1 g3 g4"
+    ". . .";
+}
+
+.g1 {
+  grid-area: g1;
+  width: 637px;
+  height: 596px;
+}
+
+.g1 img {
+  grid-area: g1;
+  width: 637px;
+  height: 596px;
+}
+
+.crr{
+  position: relative;
+  margin-left: -50px;
+  margin-top: -100px;
+  z-index: 1;
+
+}
+
+.g2 {
+  grid-area: g2;
+  background-image: url(./img/pilula2.png);
+  background-size: cover;
+}
+
+.g3 {
+  grid-area: g3;
+  background-image: url(./img/atividades2.png);
+  background-size: cover;
+}
+
+.g4 {
+  grid-area: g4;
+  background-image: url(./img/emendas2.png);
+  background-size: cover;
 }
 
 .cards {
@@ -214,7 +256,7 @@ padding: 20px 0px;
 
 .titulo-card,
 .descricao-card {
-  margin: 5px; /* Para remover margens padrão */
+  margin: 5px;
 }
 
 .titulo-card{
@@ -223,44 +265,18 @@ padding: 20px 0px;
   padding: 5px 10px;
   font-size: 15px;
   font-weight: 500;
+  color: var(--branco);
 }
 
 .descricao-card{
   font-size: 18px;
-}
-
-.item{
-  margin: 2px;
+  color: var(--branco);
 }
 
 .aaa {
   position: relative;
   background-size: cover; 
   background-position: center; 
-}
-
-.um {
-  grid-area: main;
-  background-image: url(./img/painel2.png);
-  background-size: cover;
-}
-
-.dois {
-  grid-area: dois;
-  background-image: url(./img/pilula2.png);
-  background-size: cover;
-}
-
-.tres {
-  grid-area: tres;
-  background-image: url(./img/atividades2.png);
-  background-size: cover;
-}
-
-.quatro {
-  grid-area: quatro;
-  background-image: url(./img/emendas2.png);
-  background-size: cover;
 }
 
 .aaa::before {

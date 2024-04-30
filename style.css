@@ -48,7 +48,7 @@ strong{
   align-items: center;
   justify-content: space-between;
   background-color: #192844;
-  padding: 5px 0px
+  padding: 2px 0px
 }
 
 .link-topo, a{
@@ -63,14 +63,23 @@ strong{
 
 .redor, .redinv, .redeplan, img{
   width: 25px;
+  color: var(--laranja);
 }
 
 .logos-topo{
   margin-right: 160px; 
+  padding-bottom: 2px;
 }
 
 .logos-topo:hover{
   fill: var(--laranja);
+}
+
+.nome{
+  display:inline-block;
+  color: var(--branco);
+  font-size: 16px;
+  margin: 0px 10px 0px 0px;
 }
 
 /* MENU */
@@ -79,12 +88,20 @@ strong{
     width: 120px;
     height: 60px;
     margin-left: 150px;
+     height: auto;
  }
  
  .logoplanejamento{
-    width: 270px;
-    height: 60px;
-    margin-right: 150px;
+  display: inline;
+  width: 270px;
+  height: 60px;
+  max-width: 100%;
+  margin-right: 120px;
+  height: auto;
+ }
+
+ .logoplanejamento2{
+  display: none;
  }
  
  .bgnav{    
@@ -99,12 +116,16 @@ strong{
  }
  
  .nav-link{
-     color: #808080 !important;
+     color: #808080;
      font-family: "Montserrat", sans-serif;
      font-size: 15px;
      font-weight: 500;
  }
  
+ .nav-link:hover{
+  color: var(--laranja);
+ }
+
  .line{
     width: 100%;
  }
@@ -192,10 +213,6 @@ padding: 20px 0px;
 .grid {
   display: grid;
   margin: 0% 9%;
-}
-
-.grid {
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 5px 5px;
@@ -299,6 +316,53 @@ a, .item:hover{
   color: var(--branco);
 }
 
+@media screen and (max-width: 1650px) {
+  .logoplanejamento{
+  margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+
+  .logo{
+    margin-left: 0px;
+  }
+  .logoplanejamento{
+  display: none;
+  }
+  
+.logoplanejamento2{
+  display: inline;
+  height: 80px;
+  width: 120px;
+  margin-left: 0px;
+}
+}
+
+
+@media screen and (min-width: 1245px){
+.navbar-collapse {
+    display: none !important;
+}
+}
+
+
+@media screen and (max-width: 1500px) {
+
+  .logo{
+    margin-left: 0px;
+  }
+  .logoplanejamento{
+  display: none;
+  }
+  
+.logoplanejamento2{
+  display: inline;
+  height: 80px;
+  width: 120px;
+  margin-left: 0px;
+}
+}
 
 
 /* FOOTER */

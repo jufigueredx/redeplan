@@ -71,10 +71,6 @@ strong{
   padding-bottom: 2px;
 }
 
-.logos-topo:hover{
-  fill: var(--laranja);
-}
-
 .nome{
   display:inline-block;
   color: var(--branco);
@@ -129,7 +125,6 @@ strong{
  .line{
     width: 100%;
  }
-
 
 /* SETORIAL */
 
@@ -251,8 +246,9 @@ padding: 20px 0px;
 
 .g3 {
   grid-area: g3;
-  background-image: url(./img/atividades2.png);
-  background-size: cover;
+  background-image: url(./img/ldo.jpeg);
+  background-size: auto; 
+  background-position: top;
 }
 
 .g4 {
@@ -373,6 +369,10 @@ a, .item:hover{
     color: var(--branco);
     font-size: 14px;
   }
+
+  footer, ul, li{
+    padding-left: 5px;
+  }
   
   .footer-list{
     display: flex;
@@ -388,6 +388,18 @@ a, .item:hover{
 
   .img-footer{
     width: 130px;
+  }
+
+  .logos-footer{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px 0px 0px;
+
+  }
+
+  .logos-footer2, a{
+   margin: 0px;
+   padding: 0px 30px 0px 0px;
   }
 
   #footer_content{

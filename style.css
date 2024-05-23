@@ -1,17 +1,19 @@
 /* GERAL */
 
 :root{
+  --azulclaro: #569EFE;
     --azulescuro: #21559B;
     --laranja:#F28C50;
     --dourado:#CC9900;
     --verde:#009900;
     --verdeclaro:#5CA47A;
     --cinzatopo:#F9F9F9;
+    --cinzaescuro: #66666A;
     --branco: #fff;
     --pretoclaro: #15233C;
 }
 body{
-font-size: 14px;
+font-size: 17px;
 font-family: "Montserrat", sans-serif;
 }
 
@@ -29,17 +31,20 @@ p{
 }
 
 a{
+  color: var(--laranja);
+  padding: 0px;
+  font-weight: 700;
+  font-size: 17px;
   text-decoration: none;
-  color: var(--azulescuro);
 }
 
 a:hover{
-  color: var(--laranja);
+  color: var(--azulescuro);
   transition: all 0.4s;
 }
 
 strong{
-  color: var(--dourado);
+  color: var(--cinzaescuro);
 }
 
 /* TOPO */
@@ -53,8 +58,8 @@ strong{
   font-weight: 500;
 }
 
-.link-topo, a{
-  color: var(--az);
+.link-topo> a{
+  color: var(--branco);
   font-size: 14px;
   margin: 0px 10px;
 }
@@ -174,6 +179,7 @@ strong{
   width: 100%;
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   clear: both;
+  font-size: 16px;
   font-weight: 500;
   color: #808080;
   text-align: inherit;
@@ -272,7 +278,7 @@ strong{
 
 .g2 {
   grid-area: g2;
-  background-image: url(./img/pilula2.png);
+  background-image: url(./img/pilula.png);
   background-size: cover;
 }
 
@@ -332,7 +338,7 @@ strong{
   background-image: linear-gradient(to top, rgba(9, 22, 41, 0.765), transparent);
 }
 
-a, .item:hover{
+.item:hover{
   color: var(--branco);
 }
 
@@ -395,7 +401,7 @@ a, .item:hover{
 /* FOOTER */
 
   footer{
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     color: var(--branco);
     font-size: 14px;
@@ -432,7 +438,7 @@ a, .item:hover{
 
   }
 
-  .logos-footer2, a{
+  .logos-footer2> a{
    margin: 0px;
    padding: 0px 30px 0px 0px;
   }
@@ -502,4 +508,166 @@ a, .item:hover{
   .menuuu{
     padding: 0PX;
   }
+}
+
+/* TITULOS */
+
+.titulo-o-que-e {
+  color: var(--pretoclaro);
+  font-weight: bold;
+  margin: 30px 0px 50px 0px;
+}
+
+.bulet h3::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: var(--dourado);
+  top: 5px;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitulo{
+  color: var(--laranja);
+  margin: 2% 20% 0% 20%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* TEXTO SITE */
+
+.texto-site{
+  font-size: 17px;
+  margin: 1% 20% 0% 20%;
+  text-align: justify;
+}
+
+@media screen and (max-width: 950px) {
+  .texto-site{
+    margin: 1% 10% 0% 10%;
+  }
+
+  .subtitulo{
+    margin: 3% 10% 2% 10%;
+  }
+}
+
+
+/* BOX */
+
+.boxes{
+margin-top: 5px;
+}
+
+.box{
+  color: var(--azulescuro);
+  font-weight: 600;
+  align-self: stretch;
+  /* font-size: 17px; */
+}
+
+.box:hover{
+  color: var(--laranja);
+}
+
+/* IMAGEM */
+
+.imagem-esquema{
+ width: 90%; 
+ margin: auto;
+ margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.imagem-esquema2{
+  width: 60%; 
+ margin: auto;
+ margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+/* NOTÍCIAS */
+
+.noticias-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 1% 20% 1% 20%;
+  justify-content: center;
+  justify-items: center ;
+}
+
+.card{
+ margin: 5px; 
+}
+
+.card-text{
+  text-align: left;
+  font-size: 16px;
+}
+
+.card-title{
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1650px){
+  .noticias-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1% 20% 1% 20%;
+}}
+
+@media screen and (max-width: 1300px){
+  .noticias-grid {
+    margin: 1% 10% 1% 10%;
+}}
+
+@media screen and (max-width: 1050px){
+  .noticias-grid {
+    grid-template-columns: 1fr 1fr;
+}}
+
+@media screen and (max-width: 750px){
+  .noticias-grid {
+    grid-template-columns: 1fr;
+}}
+
+.titulo-noticia{
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 5% 20% 0% 20%;
+}
+
+.datinha{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link-destak {
+  color: #006699;
+  outline: none;
+  text-decoration: underline;}
+.link-destak:hover{
+  color: var(--azulclaro);
+}  
+
+.varios-links{
+  background-color: var(--cinzatopo);
+  padding: 10px 20px;
+}
+
+
+/* CONTATO */
+
+.card-atribuicoes {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
 }

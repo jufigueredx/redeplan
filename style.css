@@ -671,3 +671,46 @@ margin-top: 5px;
   padding-bottom: 20px;
   border-radius: 10px;
 }
+
+
+/* ELABORAÇÃO */
+
+.quadrados-elaboracao{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.quadrado{
+  background-color: var(--verdeclaro);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.quadrado-tit{
+  font-weight: 700;
+  color: var(--branco);
+  font-size: 18px ;
+  text-align: left;
+}
+
+.quadrado-text{
+  color: var(--cinzatopo);
+  font-size: 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1100px){
+  .quadrados-elaboracao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}}
+
+.quadrados-monitoramento{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
